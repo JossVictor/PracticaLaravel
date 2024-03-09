@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('conference_id');
             $table->unsignedBigInteger('superbowl_id');
-            $table->foreign('conference_id');
+            $table->foreig('conference_id');
             $table->timestamps();
         });
     }
