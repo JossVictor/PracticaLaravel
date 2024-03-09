@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name', 50)->unique();
             $table->string('city', 50)->nullable();
-            $table->tinyInterger('titles')->default(0);
+            $table->tinyInteger('titles')->default(0);
             $table->foreingId('division_id');
             $table->foreingId('conference_id');
             $table->timestamps();
