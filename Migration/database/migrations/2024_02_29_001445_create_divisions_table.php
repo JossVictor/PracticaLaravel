@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name', 50);
             $table->string('logo');
-            $table->tinyInterger('year');
+            $table->tinyInteger('year');
             $table->BigInteger('division_id');
             $table->BigInteger('superbowl_id');
             $table->foreign('division_id');
